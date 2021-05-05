@@ -12,11 +12,9 @@ const name = "May"
   
   conn.on("connect", () => {
     // code that does something when the connection is first established
-    conn.write('successfully connected to game server');
-  });
-
-  conn.on('connect', () => {
-    conn.write('Hello from client!');
+  //  conn.write('successfully connected to game server');
+    conn.write("Say: May")
+   //  conn.write('Hello from client!');
    // conn.write("Move; up");
        setInterval (() => {
     conn.write("Move: up");
